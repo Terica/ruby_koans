@@ -13,7 +13,7 @@ class AboutAsserts < Neo::Koan
   # Enlightenment may be more easily achieved with appropriate
   # messages.
   def test_assert_with_message
-    assert false, "This should be true -- Please fix this"
+    assert true, "This should be true -- Please fix this"
   end
 
   # To understand reality, we must compare our expectations against
@@ -35,6 +35,6 @@ class AboutAsserts < Neo::Koan
 
   # Sometimes we will ask you to fill in the values
   def test_fill_in_values
-    assert_equal __, 1 + 1
+    assert_equal 2, 1 + 1
   end
 end
