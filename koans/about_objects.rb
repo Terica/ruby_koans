@@ -15,19 +15,19 @@ class AboutObjects < Neo::Koan
   end
 
   def test_objects_can_be_inspected
-    assert_equal __, 123.inspect
-    assert_equal __, nil.inspect
+    assert_equal "123", 123.inspect
+    assert_equal "nil", nil.inspect
   end
 
   def test_every_object_has_an_id
     obj = Object.new
-    assert_equal __, obj.object_id.class
+    assert_equal Fixnum, obj.object_id.class
   end
 
   def test_every_object_has_different_id
     obj = Object.new
     another_obj = Object.new
-    assert_equal __, obj.object_id != another_obj.object_id
+    assert_equal true, obj.object_id != another_obj.object_id
   end
 
   def test_small_integers_have_fixed_ids
